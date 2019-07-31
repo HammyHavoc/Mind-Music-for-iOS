@@ -7,7 +7,7 @@ define( function ( require ) {
 		wp_ws_url : 'https://www.mindmusic.online/wp-appkit-api/mind-music-ios',
 		wp_url : 'https://www.mindmusic.online',
 		theme : 'q-android-master',
-		version : '1.0',
+		version : '1.1',
 		app_type : 'phonegap-build',
 		app_title : 'Mind Music',
 		app_platform : 'ios',
