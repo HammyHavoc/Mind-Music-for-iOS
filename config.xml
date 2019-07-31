@@ -3,7 +3,7 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "online.mindmusic"
         versionCode = ""
-        version     = "1.1" >
+        version     = "1.2" >
 
 	<name>Mind Music</name>
 
@@ -20,6 +20,7 @@
 	<preference name="webviewbounce" value="false" />
 
 	<!-- Custom preferences -->
+	<preference name="android-minSdkVersion" value="15" />
 
 	<!-- PhoneGap plugin declaration -->
 	<plugin name="cordova-plugin-inappbrowser" source="npm" />
