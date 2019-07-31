@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns       = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "online.mindmusic"
+        versionCode = ""
+        version     = "1.0" >
+
+	<name>Mind Music</name>
+
+	<description></description>
+
+	<author href="https://www.splitanatom.com" email="hammy@splitanatom.com">Split An Atom</author>
+
+	<platform name="ios" />
+
+	<!-- General preferences -->
+	<preference name="permissions" value="none"/>
+
+	<preference name="DisallowOverscroll" value="true" />
+	<preference name="webviewbounce" value="false" />
+
+	<!-- Custom preferences -->
+
+	<!-- PhoneGap plugin declaration -->
+	<plugin name="cordova-plugin-inappbrowser" source="npm" />
+	<plugin name="cordova-plugin-network-information" source="npm" />
+	<plugin name="cordova-plugin-splashscreen" source="npm" />
+	<plugin name="cordova-plugin-device" source="npm" />
+	<plugin name="cordova-plugin-statusbar" source="npm" />
+	<plugin name="onesignal-cordova-plugin" spec="2.4.5" source="npm" />
+
+	<!-- SplashScreen configuration -->
+	<preference name="AutoHideSplashScreen" value="false" />
+	<preference name="FadeSplashScreenDuration" value="1000" />
+	<preference name="ShowSplashScreenSpinner" value="false" />
+	<gap:config-file platform="ios" parent="UIStatusBarHidden"><true/></gap:config-file>
+	<gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance"><false/></gap:config-file>
+
+	<!-- Icons and Splashscreens declaration -->
+
+	<!-- Default graphics -->
+	<icon src="icon.png"/>
+	<splash src="splash.png"/>
+	
+	<platform name="ios">
+	
+	<icon src="res/icon/ios/icon-1024.png" height="1024" width="1024"/>
+	
+	<icon src="res/icon/ios/icon-small.png" height="29" width="29"/>
+	
+	<icon src="res/icon/ios/icon-small@2x.png" height="58" width="58"/>
+	
+	<icon src="res/icon/ios/icon-small@3x.png" height="87" width="87"/>
+	
+	<icon src="res/icon/ios/icon-small-40.png" height="40" width="40"/>
+	
+	<icon src="res/icon/ios/icon-small-40@2x.png" height="80" width="80"/>
+	
+	<icon src="res/icon/ios/icon-small-40@3x.png" height="120" width="120"/>
+	
+	<icon src="res/icon/ios/icon-small-50.png" height="50" width="50"/>
+	
+	<icon src="res/icon/ios/icon-small-50@2x.png" height="100" width="100"/>
+	
+	<icon src="res/icon/ios/icon.png" height="57" width="57"/>
+	
+	<icon src="res/icon/ios/icon@2x.png" height="114" width="114"/>
+	
+	<icon src="res/icon/ios/icon-60.png" height="60" width="60"/>
+	
+	<icon src="res/icon/ios/icon-60@2x.png" height="120" width="120"/>
+	
+	<icon src="res/icon/ios/icon-60@3x.png" height="180" width="180"/>
+	
+	<icon src="res/icon/ios/icon-72.png" height="72" width="72"/>
+	
+	<icon src="res/icon/ios/icon-72@2x.png" height="144" width="144"/>
+	
+	<icon src="res/icon/ios/icon-76.png" height="76" width="76"/>
+	
+	<icon src="res/icon/ios/icon-76@2x.png" height="152" width="152"/>
+	
+	<icon src="res/icon/ios/icon-167.png" height="167" width="167"/>
+	
+	<icon src="res/icon/ios/icon-83.5@2x.png" height="167" width="167"/>
+	
+	<splash src="res/screen/ios/Default@2x~iphone~anyany.png"/>
+	
+	<splash src="res/screen/ios/Default@2x~iphone~comany.png"/>
+	
+	<splash src="res/screen/ios/Default@3x~iphone~anyany.png"/>
+	
+	<splash src="res/screen/ios/Default@3x~iphone~comany.png"/>
+	
+	<splash src="res/screen/ios/Default@2x~ipad~anyany.png"/>
+	
+	<splash src="res/screen/ios/Default@2x~ipad~comany.png"/>
+	
+	</platform>
+	
+	<platform name="ios">
+			<edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge">
+				<string>Your string goes here</string>
+			</edit-config>	
+			<edit-config target="NSLocationAlwaysUsageDescription" file="*-Info.plist" mode="merge">
+				<string>Your string goes here</string>
+			</edit-config>	
+			<edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
+				<string>Your string goes here</string>
+			</edit-config>	
+		</platform>
+</widget>
