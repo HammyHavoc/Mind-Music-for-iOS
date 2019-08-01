@@ -3,11 +3,11 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "online.mindmusic"
         versionCode = ""
-        version     = "1.2" >
+        version     = "1.4" >
 
 	<name>Mind Music</name>
 
-	<description></description>
+	<description>The latest electronic music news to your device.</description>
 
 	<author href="https://www.splitanatom.com" email="hammy@splitanatom.com">Split An Atom</author>
 
@@ -29,6 +29,7 @@
 	<plugin name="cordova-plugin-device" source="npm" />
 	<plugin name="cordova-plugin-statusbar" source="npm" />
 	<plugin name="onesignal-cordova-plugin" spec="2.4.5" source="npm" />
+	<plugin name="cordova-plugin-x-socialsharing" spec="5.4.1" source="npm" />
 
 	<!-- SplashScreen configuration -->
 	<preference name="AutoHideSplashScreen" value="false" />
